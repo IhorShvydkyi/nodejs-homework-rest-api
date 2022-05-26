@@ -1,2 +1,3 @@
 const createError = require('./createError')
-module.exports = { createError }
+const sendMail = require('./sendMail')
+module.exports = { createError, sendMail }
