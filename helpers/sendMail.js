@@ -14,7 +14,7 @@ const sendMail = async (user) => {
 			from: 'igorshvydky35@gmail.com',
 			to: email,
 			subject: 'Verifycation E-Mail',
-			html: `<a href="${SERVICE_URL}/api/users/verification/${verificationToken}">Click to verifycation you E-mail</a>`,
+			html: `<a href="${SERVICE_URL}/api/auth/verification/${verificationToken}">Click to verifycation you E-mail</a>`,
 		}
 		console.log('send mail :>> ', mail)
 		await sgMail.send(mail)
